@@ -84,24 +84,24 @@ A scalable, secure, and event-driven digital payment system inspired by fintech 
 
 ### Auth
 
-POST /auth/register
-POST /auth/login
+1. POST /auth/register
+2. POST /auth/login
 
 ### Wallet
 
-POST /wallet/add
-POST /wallet/withdraw
-GET /wallet/balance
+1. POST /wallet/add
+2. POST /wallet/withdraw
+3. GET /wallet/balance
 
 
 ### Transaction
 
-GET /transaction/history
+1. GET /transaction/history
 
 
 ### UPI
 
-POST /upi/pay
+1. POST /upi/pay
 
 🔄 Kafka Flow
 UPI Service sends event
@@ -122,6 +122,7 @@ Ensures consistency
 
 
 fintech-microservices-platform/
+
 ├── auth-service/
 ├── wallet-service/
 ├── transaction-service/
@@ -132,6 +133,7 @@ fintech-microservices-platform/
 
 
 🧠 Concepts
+
 Microservices
 Event-driven architecture
 Distributed locking
@@ -141,6 +143,7 @@ REST API design
 
 
 📈 Future Scope
+
 API Gateway
 Eureka Service Discovery
 Circuit Breaker
