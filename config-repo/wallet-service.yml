@@ -1,1 +1,16 @@
 
+
+spring:
+  redis:
+    host: my-redis-network
+    port: 6379
+
+  kafka:
+    consumer:
+      group-id: wallet-service-group
+
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka/
